@@ -36,7 +36,7 @@ Aplicación web en PHP para consultar el tiempo atmosférico de cualquier ciudad
 
 2. Pon tu API key en `config.php`
 ```php
-   define('API_KEY', 'key');
+   define('API_KEY', 'dba490d12225e0529cd634126e99af50');
 ```
 
 3. Levanta los contenedores
