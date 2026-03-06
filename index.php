@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['ciudad'])) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Weather App</title>
+    <title>Aplicacion del tiempo</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; background: #f0f4f8; }
         h1 { color: #2c3e50; }
@@ -34,10 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['ciudad'])) {
 </head>
 <body>
     <nav><a href="index.php">Inicio</a> <a href="historial.php">Historial</a></nav>
-    <h1>&#127774; Weather App</h1>
+    <h1>&#127774; Aplicacion del tiempo</h1>
 
     <form method="POST">
-        <input type="text" name="ciudad" placeholder="Escribe una ciudad..." value="<?= htmlspecialchars($_POST['ciudad'] ?? '') ?>">
+        <input type="text" name="ciudad" placeholder="Escribe una ciudad" value="<?= htmlspecialchars($_POST['ciudad'] ?? '') ?>">
         <button type="submit">Buscar</button>
     </form>
 

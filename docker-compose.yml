@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   web:
     build: .
@@ -11,26 +9,29 @@ services:
         condition: service_healthy
     environment:
       DB_HOST: db
-      DB_USER: weatheruser
-      DB_PASS: weatherpass
-      DB_NAME: weather_db
+      DB_USER: mariobd
+      DB_PASS: abcd
+      DB_NAME: mariodb
+    restart: on-failure
 
   db:
-    image: mariadb:11
+    image: mariadb:10.6
     container_name: weather_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: weather_db
-      MYSQL_USER: weatheruser
-      MYSQL_PASSWORD: weatherpass
+      MYSQL_DATABASE: mariodb
+      MYSQL_USER: mariobd
+      MYSQL_PASSWORD: abcd
+      MYSQL_INITDB_SKIP_TZINFO: 1
     volumes:
       - db_data:/var/lib/mysql
-      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
     healthcheck:
-      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "--silent"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+    restart: on-failure
 
 volumes:
   db_data:
