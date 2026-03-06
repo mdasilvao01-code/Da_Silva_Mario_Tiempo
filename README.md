@@ -31,7 +31,7 @@ Aplicación web en PHP para consultar el tiempo atmosférico de cualquier ciudad
 1. Clona el repositorio
 ```bash
    git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
-   cd weather-app
+   cd Da_Silva_Mario_Tiempo
 ```
 
 2. Pon tu API key en `config.php`
@@ -48,13 +48,10 @@ Aplicación web en PHP para consultar el tiempo atmosférico de cualquier ciudad
 
 ## Estructura del proyecto
 ```
-weather-app/
+Da_Silva_Mario_Tiempo/
 ├── index.php        # Búsqueda de ciudades
-├── actual.php       # Tiempo actual
-├── horas.php        # Previsión por horas
-├── semana.php       # Previsión semanal
-├── historial.php    # Historial de consultas
-├── config.php       # Configuración y conexión BD
+├── PHP      # Carpetas con los php
+├── Base de Datos        # Carpeta con el sql de la base de datos del tiempo
 ├── schema.sql       # Esquema de la base de datos
 ├── Dockerfile
 └── docker-compose.yml
@@ -76,8 +73,8 @@ Una tabla `consultas` que registra cada búsqueda realizada:
 
 ## Despliegue en AWS
 
-1. Lanza una instancia EC2 (Ubuntu 22.04, t2.micro)
-2. Abre el puerto 80 en el Security Group
-3. Instala Docker en la instancia
-4. Sube el proyecto y ejecuta `docker compose up -d --build`
-5. Accede desde `http://IP_PUBLICA_EC2`
+1. Tenemos una instancia EC2 (Ubuntu 22.04, t2.micro)
+2. Utiliza el puerto 80 en el Security Group
+3. Tiene el Docker en la instancia
+4. Tiene el proyecto y al ejecuta `docker compose up -d --build` se inicia el programa 
+5. Se accede desde `http://IP_PUBLICA_EC2`
