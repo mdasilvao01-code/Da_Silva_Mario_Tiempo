@@ -30,7 +30,7 @@ Aplicación web en PHP para consultar el tiempo atmosférico de cualquier ciudad
 
 1. Clona el repositorio
 ```bash
-   git clone https://github.com/TU_USUARIO/weather-app.git
+   git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
    cd weather-app
 ```
 
