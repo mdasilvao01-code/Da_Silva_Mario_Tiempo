@@ -35,7 +35,6 @@ tiempo-mvc/
 │   └── Tiempo.sql          # Script de creación de la base de datos
 ├── Dockerfile
 ├── docker-compose.yml
-└── .env.example
 ```
 
 - **Model.php** → gestiona todas las operaciones con la base de datos (guardar y consultar registros)
@@ -73,8 +72,7 @@ El proyecto usa **Docker** y **Docker Compose** con dos servicios:
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
 ```
 
 2. Levanta los contenedores:
@@ -82,7 +80,7 @@ cd tu-repositorio
 docker-compose up -d
 ```
 
-3. Abre el navegador en: [http://localhost](http://localhost)
+3. Abre el navegador en: [http://localhost](http://localhost:80)
 
 ---
 
@@ -108,8 +106,7 @@ sudo usermod -aG docker ubuntu
 
 4. Clonar el repositorio y levantar los contenedores:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
 docker-compose up -d
 ```
 
