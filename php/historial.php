@@ -34,7 +34,7 @@ extract($ctrl->historial());
         <canvas id="graficaTipos" height="80"></canvas>
     </div>
     <div class="tarjeta">
-        <h3>Últimas consultas</h3>
+        <h3>Ultimas consultas</h3>
         <?php if (empty($consultas)): ?>
             <p>No hay consultas todavia.</p>
         <?php else: ?>

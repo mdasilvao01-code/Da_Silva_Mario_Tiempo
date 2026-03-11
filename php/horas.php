@@ -24,7 +24,7 @@ extract($ctrl->horas($lat, $lon, $ciudad, $pais));
 </head>
 <body>
     <nav><a href="index.php">&#8592; Volver</a> <a href="historial.php">Historial</a></nav>
-    <h1>&#128336; Previsión por horas: <?= htmlspecialchars($ciudad) ?>, <?= htmlspecialchars($pais) ?></h1>
+    <h1>&#128336; Prevision por horas: <?= htmlspecialchars($ciudad) ?>, <?= htmlspecialchars($pais) ?></h1>
     <div class="tarjeta">
         <div class="horas-grid">
             <?php foreach ($horas as $i => $h): ?>
