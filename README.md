@@ -80,7 +80,7 @@ git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
 docker-compose up -d
 ```
 
-3. Abre el navegador en: [http://localhost](http://localhost:80)
+3. Abre el navegador en: [http://localhost:80/](http://localhost:80/)
 
 ---
 
@@ -90,7 +90,7 @@ La aplicación está desplegada en una instancia **EC2 de AWS** y es accesible d
 
 ### Pasos realizados para el despliegue en AWS
 
-1. Crear una instancia EC2 (Ubuntu 22.04) en AWS y abrir el puerto 80 en el grupo de seguridad.
+1. Crear una instancia EC2 (debian) en AWS y abrir el puerto 80 en el grupo de seguridad.
 
 2. Conectarse a la instancia por SSH:
 ```bash
