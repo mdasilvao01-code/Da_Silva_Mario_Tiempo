@@ -1,10 +1,10 @@
-# 🌤️ Aplicación del Tiempo
+# Aplicación del Tiempo
 
 Aplicación web desarrollada en PHP que permite consultar el tiempo atmosférico de cualquier ciudad del mundo, utilizando la API de OpenWeatherMap. Los datos de las consultas se almacenan en una base de datos MariaDB y la aplicación está desplegada en AWS con Docker.
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 
 - Búsqueda de ciudades mediante la API de geolocalización de OpenWeatherMap
 - Si la ciudad no existe, se muestra un mensaje de error
@@ -16,7 +16,7 @@ Aplicación web desarrollada en PHP que permite consultar el tiempo atmosférico
 
 ---
 
-## 🏗️ Estructura del proyecto (MVC)
+## Estructura del proyecto (MVC)
 
 El proyecto sigue el patrón **Modelo - Vista - Controlador (MVC)**:
 
@@ -43,7 +43,7 @@ tiempo-mvc/
 
 ---
 
-## 🗄️ Base de datos
+## Base de datos
 
 Se utiliza **MariaDB** con una tabla `consultas` que registra cada búsqueda realizada:
 
@@ -61,7 +61,7 @@ CREATE TABLE consultas (
 
 ---
 
-## 🚀 Despliegue con Docker
+## Despliegue con Docker
 
 El proyecto usa **Docker** y **Docker Compose** con dos servicios:
 
@@ -94,7 +94,7 @@ La aplicación está desplegada en una instancia **EC2 de AWS** y es accesible d
 
 2. Conectarse a la instancia por SSH:
 ```bash
-ssh -i tu-clave.pem ubuntu@<IP-PUBLICA>
+ssh -i tu-clave.pem ubuntu@34.227.123.56
 ```
 
 3. Instalar Docker y Docker Compose:
@@ -110,13 +110,13 @@ git clone https://github.com/mdasilvao01-code/Da_Silva_Mario_Tiempo.git
 docker-compose up -d
 ```
 
-5. La aplicación queda accesible en: `http://<IP-PUBLICA>`
+5. La aplicación queda accesible en: `http://34.227.123.56/`
 
-> **URL de acceso:** http://<IP-PUBLICA>
-
+> **URL de acceso con ip elastica:** http://34.227.123.56/
+> **URL de acceso con el dominio:** http://
 ---
 
-## 🔑 API utilizada
+## API utilizada
 
 - [OpenWeatherMap](https://openweathermap.org/api) — API gratuita de datos meteorológicos
   - Geocoding API → para obtener las coordenadas de una ciudad
@@ -125,7 +125,7 @@ docker-compose up -d
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - PHP 8.2
 - Apache
