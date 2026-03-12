@@ -9,7 +9,7 @@ Aplicación web desarrollada en PHP que permite consultar el tiempo atmosférico
 - Búsqueda de ciudades mediante la API de geolocalización de OpenWeatherMap
 - Si la ciudad no existe, se muestra un mensaje de error
 - Consulta del tiempo actual de la ciudad seleccionada
-- Previsión meteorológica por horas (próximas 24h)
+- Previsión meteorológica por horas 
 - Previsión meteorológica semanal
 - Gráficas interactivas con Chart.js para visualizar los datos
 - Historial de todas las consultas realizadas, almacenadas en base de datos
@@ -18,7 +18,7 @@ Aplicación web desarrollada en PHP que permite consultar el tiempo atmosférico
 
 ## Estructura del proyecto (MVC)
 
-El proyecto sigue el patrón **Modelo - Vista - Controlador (MVC)**:
+El proyecto sigue el patrón **Modelo - Vista - Controlador**:
 
 ```
 tiempo-mvc/
@@ -37,9 +37,9 @@ tiempo-mvc/
 ├── docker-compose.yml
 ```
 
-- **Model.php** → gestiona todas las operaciones con la base de datos (guardar y consultar registros)
-- **Controller.php** → realiza las llamadas a la API de OpenWeatherMap y prepara los datos
-- **Vistas (*.php)** → reciben los datos del controlador y solo se encargan de mostrar el HTML
+- **Model.php** gestiona todas las operaciones con la base de datos (guardar y consultar registros)
+- **Controller.php** realiza las llamadas a la API de OpenWeatherMap y prepara los datos
+- **Vistas (*.php)** reciben los datos del controlador y solo se encargan de mostrar el HTML
 
 ---
 
@@ -65,8 +65,8 @@ CREATE TABLE consultas (
 
 El proyecto usa **Docker** y **Docker Compose** con dos servicios:
 
-- `web` → PHP 8.2 con Apache
-- `db` → MariaDB 10.6
+- `web` → PHP con Apache
+- `db` → MariaDB 
 
 ### Pasos para ejecutar en local
 
@@ -120,17 +120,17 @@ docker-compose up -d
 ## API utilizada
 
 - [OpenWeatherMap](https://openweathermap.org/api) — API gratuita de datos meteorológicos
-  - Geocoding API → para obtener las coordenadas de una ciudad
-  - Current Weather API → para el tiempo actual
-  - Forecast API → para la previsión por horas y semanal
+  - Geocoding API  para obtener las coordenadas de una ciudad
+  - Current Weather API  para el tiempo actual
+  - Forecast API  para la previsión por horas y semanal
 
 ---
 
 ## Tecnologías utilizadas
 
-- PHP 8.2
+- PHP 
 - Apache
-- MariaDB 10.6
-- Chart.js (gráficas)
+- MariaDB 
+- Chart.js 
 - Docker & Docker Compose
 - AWS EC2
