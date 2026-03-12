@@ -84,7 +84,7 @@ docker-compose up -d
 
 ---
 
-## ☁️ Despliegue en AWS
+## Despliegue en AWS
 
 La aplicación está desplegada en una instancia **EC2 de AWS** y es accesible desde Internet.
 
