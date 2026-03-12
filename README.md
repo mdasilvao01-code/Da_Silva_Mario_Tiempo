@@ -94,7 +94,7 @@ La aplicación está desplegada en una instancia **EC2 de AWS** y es accesible d
 
 2. Conectarse a la instancia por SSH:
 ```bash
-ssh -i tu-clave.pem ubuntu@34.227.123.56
+ssh -i labuser.pem ubuntu@34.227.123.56
 ```
 
 3. Instalar Docker y Docker Compose:
