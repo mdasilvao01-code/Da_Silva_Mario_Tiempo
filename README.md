@@ -113,7 +113,8 @@ docker-compose up -d
 5. La aplicación queda accesible en: `http://34.227.123.56/`
 
 > **URL de acceso con ip elastica:** http://34.227.123.56/
-> **URL de acceso con el dominio:** http:tiempomario.zapto.org
+---
+> **URL de acceso con el dominio:** http://tiempomario.zapto.org
 ---
 
 ## API utilizada
